@@ -1,9 +1,5 @@
-type StudentProps ={
-    name:{
-        first: string,
-        last: string
-    }
-}
+import { StudentProps } from "../types/data"
+
 
 const Students = (props: StudentProps) => {
   return (
