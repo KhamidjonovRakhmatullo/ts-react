@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Intro from "./components/pages/intro";
+import Students from "./components/pages/students";
 
 function App() {
+  const studentName ={
+    name:{
+      first: "Sherzod",
+      last: "Xudaynazarov"
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{textAlign: "center"}}>
+     <Intro name="Rahmatulloh" msgNum={3} isLoggedIn={false}/>
+     <Students name={studentName.name}/>
     </div>
   );
 }
