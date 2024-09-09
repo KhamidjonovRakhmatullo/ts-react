@@ -1,4 +1,6 @@
+import Contact from "./components/pages/contact";
 import Intro from "./components/pages/intro";
+import Status from "./components/pages/status";
 import StudentList from "./components/pages/studentList";
 import Students from "./components/pages/students";
 
@@ -32,9 +34,11 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Intro name="Rahmatulloh" msgNum={3} isLoggedIn={false} />
+      <Intro name="Rahmatulloh" msgNum={3} isLoggedIn={true} />
       <Students name={studentName.name} />
       <StudentList name={studentsInfo}/>
+      <Status status="success"/>
+      <Contact>Lorem ipsum dolor sit, amet consectetur adipisicing.</Contact>
     </div>
   );
 }

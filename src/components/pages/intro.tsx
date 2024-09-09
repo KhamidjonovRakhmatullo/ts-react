@@ -6,7 +6,7 @@ const Intro = (props: IntroProps) => {
     <div>
         {props.isLoggedIn ? (
         <h1> 
-            Hi {props.name}! You new got {props.msgNum} message(s) on Gmail
+            Hi {props.name}! You got {props.msgNum} new message(s) on Gmail
         </h1>
         ) : (
             "You are NOT LoggedIn YET"
