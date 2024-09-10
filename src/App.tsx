@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Intro name="Rahmatulloh" msgNum={3} isLoggedIn={true} />
+      <Intro name="Rahmatulloh" msgNum={3} isLoggedIn={false} />
       <Students name={studentName.name} />
       <StudentList name={studentsInfo}/>
       <Status status="success"/>
