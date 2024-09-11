@@ -8,7 +8,7 @@ const Status = (props: StatusProps) => {
     message = "Success !!!";
   } else if (props.status === "error") {
     message = "ERROR !!!";
-  } 
+  }
   return (
     <div>
       <h2>Status:{message} </h2>

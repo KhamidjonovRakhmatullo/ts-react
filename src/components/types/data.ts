@@ -25,3 +25,18 @@ export type StatusProps = {
 export type ContactProps = {
     children: string
 }
+
+export type LessonProps = {
+  lesson: string
+}
+
+export type LessonDaysProps ={
+  lesson: {
+    name: string
+    room: number
+    students: number
+    degree: string
+    day: string
+    hour: string
+  }[]
+}
